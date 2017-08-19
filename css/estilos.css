@@ -1,0 +1,17 @@
+#contenido{
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body{
+  background-color: #02010a;
+}
+
+h1{
+  float: left;
+  color: white;
+  text-shadow: 2px #02010a;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
