@@ -6,12 +6,27 @@
 
 body{
   background-color: #02010a;
+  font-family: 'Dancing Script', cursive;
 }
 
-h1{
-  float: left;
-  color: white;
-  text-shadow: 2px #02010a;
-  border-top-left-radius: 10px;
+#cabecera {
+	padding: 12px 15px;
+	border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  background: #5b7989;
+}
+
+
+h1 {
+  color: white;
+}
+
+h1 nav{
+  float: right;
+}
+
+a{
+  text-decoration: none;
+  font-size: 0.7em;
+  color: white;
 }
