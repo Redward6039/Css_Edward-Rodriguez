@@ -10,7 +10,7 @@ body{
 }
 
 #cabecera {
-	padding: 12px 15px;
+	padding: 35px 40px;
 	border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   background: #5b7989;
@@ -23,10 +23,48 @@ h1 {
 
 h1 nav{
   float: right;
+  margin-right: 40px;
 }
 
 a{
-  text-decoration: none;
   font-size: 0.7em;
   color: white;
+}
+
+#contenedor1{
+  padding: 35px 40px;
+  background-color: #82c3a6;
+}
+
+#central img{
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: auto;
+  box-shadow: 2px 2px #02010a;
+}
+
+#contenedor2{
+  padding: 35px 40px;
+  background-color: #d5c75f;
+  border: 1px;
+  display: flex;
+  flex-direction: row;
+}
+
+#contenedor2 img{
+  width: 80%;
+  max-width: 300px;
+  margin: auto;
+  box-shadow: 2px 2px #02010a;
+}
+
+#izquierda{
+  float: left;
+  order: 1;
+}
+
+#derecha{
+  float: right;
+  order: 2;
 }
