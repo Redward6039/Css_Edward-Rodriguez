@@ -81,18 +81,18 @@ figcaption{
 #galeria{
   padding: 35px 40px;
   background-color: #d5c75f;
-  border: 1px;
   display: flex;
   flex-direction: row;
 }
 
-article img{
-  width: 100%;
-  height: 100%;
-  max-width: 900px;
-  max-height: 900px;
-  margin: 0 auto;
+#galeria img{
+  width: 90%;
+  height: 90%;
+  width: 250px;
+  height: 200px;
+  margin: 0.8em 0.5em;
   display: block;
+  padding-left: 0;
 }
 
 /*FOOTER*/
@@ -137,7 +137,7 @@ ul{
   list-style: none;
   font-size: 1em;
   padding-left: 0;
-  padding-right: 12px;
+  padding-right: 10px;
 }
 
 ul a{
