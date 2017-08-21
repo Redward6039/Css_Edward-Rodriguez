@@ -9,6 +9,10 @@ body{
   font-family: 'Dancing Script', cursive;
 }
 
+body img{
+  box-shadow: 2px 2px #02010a;
+}
+
 #cabecera {
 	padding: 35px 40px;
 	border-top-left-radius: 10px;
@@ -26,7 +30,7 @@ h1 nav{
   margin-right: 40px;
 }
 
-a{
+h1 a{
   font-size: 0.7em;
   color: white;
 }
@@ -41,7 +45,6 @@ a{
   max-width: 600px;
   display: block;
   margin: auto;
-  box-shadow: 2px 2px #02010a;
 }
 
 #contenedor2{
@@ -53,18 +56,90 @@ a{
 }
 
 #contenedor2 img{
-  width: 80%;
-  max-width: 300px;
-  margin: auto;
-  box-shadow: 2px 2px #02010a;
+  width: 90%;
+  height: 90%;
+  max-width: 900px;
+  max-height: 900px;
+  margin: 0 auto;
+  display: block;
 }
 
-#izquierda{
-  float: left;
+figcaption{
+  text-align: center;
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+.izquierda{
   order: 1;
 }
 
-#derecha{
-  float: right;
+.derecha{
   order: 2;
+}
+
+#galeria{
+  padding: 35px 40px;
+  background-color: #d5c75f;
+  border: 1px;
+  display: flex;
+  flex-direction: row;
+}
+
+article img{
+  width: 100%;
+  height: 100%;
+  max-width: 900px;
+  max-height: 900px;
+  margin: 0 auto;
+  display: block;
+}
+
+/*FOOTER*/
+#pie{
+  padding: 35px 40px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color:  #C6d5c5;
+  display: flex;
+  flex-direction: row;
+}
+
+#pie div{
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: block;
+  font-size: 1.3em;
+}
+
+.contacto{
+  font-size: 1.2em;
+  order: 1;
+}
+
+.termino{
+  font-size: 1.2em;
+  order: 2;
+}
+
+.sociales{
+  font-size: 1.2em;
+  order: 3;
+}
+
+.derecho{
+  font-size: 1.2em;
+  order: 4;
+}
+
+ul{
+  list-style: none;
+  font-size: 1em;
+  padding-left: 0;
+  padding-right: 12px;
+}
+
+ul a{
+  color: black;
 }
