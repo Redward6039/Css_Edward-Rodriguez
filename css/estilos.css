@@ -1,67 +1,92 @@
+/*DIMENSIONES DE LA PAGINA*/
 #contenido{
   max-width: 900px;
   width: 100%;
   margin: 0 auto;
 }
+/*DIFERENTES TAMANOS PARA DESKTOP Y MOVIL*/
+@media (min-width:720px) {
+  #contenido{
+    min-width: 900px;
+  }
+}
 
+@media (max-width:420px) {
+  #contenido{
+    max-width: 899px;
+  }
+}
+/*COLOR DE FONDO Y TIPOGRAFIA*/
 body{
   background-color: #02010a;
   font-family: 'Dancing Script', cursive;
 }
-
+/*SOMBRA DE LAS IMAGENES*/
 body img{
   box-shadow: 2px 2px #02010a;
 }
-
+/*COLOR DE CABECERA, BORDES, PADDING*/
 #cabecera {
-	padding: 35px 40px;
+	padding: 5% 8%;
 	border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   background: #5b7989;
 }
-
-
+/*COLOR Y SOMBRA DEL NOMBRE DEL SITIO*/
 h1 {
   color: white;
+  text-shadow: 2px 2px #02010a;
 }
-
+/*NAVEGADOR DEL SITIO*/
 h1 nav{
   float: right;
   margin-right: 40px;
 }
-
+/*TAMANO Y COLOR DEL NAVEGADOR DEL SITIO*/
 h1 a{
   font-size: 0.7em;
   color: white;
 }
-
+/*CONTENEDOR IMAGEN CENTRAL*/
 #contenedor1{
-  padding: 35px 40px;
+  padding: 5% 8%;
   background-color: #82c3a6;
 }
-
-#central img{
-  width: 100%;
-  max-width: 600px;
+/*DIMENSION DE LA IMAGEN CENTRAL*/
+.central img{
+  width: 80%;
   display: block;
   margin: auto;
 }
 
+
 #contenedor2{
-  padding: 35px 40px;
+  padding: 5% 8%;
   background-color: #d5c75f;
   border: 1px;
   display: flex;
-  flex-direction: row;
+  display: -webkit-flex;
+  flex: column;
+  -webkit-flex: column;
 }
 
-#contenedor2 img{
-  width: 90%;
-  height: 90%;
-  max-width: 900px;
-  max-height: 900px;
-  margin: 0 auto;
+section [class*="bloque"]{
+  min-height: 200px;
+  flex: 1 2 60%;
+}
+
+.bloque1 img{
   display: block;
+  margin: auto;
+  width: 80%;
+  order: 1;
+}
+
+.bloque2 img{
+  display: block;
+  margin: auto;
+  width: 80%;
+  order: 2;
 }
 
 figcaption{
@@ -69,15 +94,15 @@ figcaption{
   font-size: 1.5em;
   text-decoration: underline;
 }
-
-.izquierda{
-  order: 1;
+/*Visualizacion movil*/
+@media all and (max-width: 420px) {
+  #contenedor2{
+    flex-direction: column;
+    -webkit-flex-direction: column;
+  }
 }
 
-.derecha{
-  order: 2;
-}
-
+/*diseno de las galerias*/
 #galeria{
   padding: 35px 40px;
   background-color: #d5c75f;
@@ -113,22 +138,22 @@ figcaption{
   font-size: 1.3em;
 }
 
-.contacto{
+#contacto{
   font-size: 1.2em;
   order: 1;
 }
 
-.termino{
+#termino{
   font-size: 1.2em;
   order: 2;
 }
 
-.sociales{
+#sociales{
   font-size: 1.2em;
   order: 3;
 }
 
-.derecho{
+#derecho{
   font-size: 1.2em;
   order: 4;
 }
