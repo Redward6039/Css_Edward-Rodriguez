@@ -4,24 +4,22 @@
   width: 100%;
   margin: 0 auto;
 }
-
 /*DIFERENTES TAMANOS PARA DESKTOP Y MOVIL*/
 @media all and (min-width:720px) {
   #contenido{
     min-width: 900px;
   }
   #cabecera{
-    animation: mianimacion 1s;
+    animation: mianimacion 0.5s;
   }
 }
-
 @media all and (max-width:500px) {
   #contenido{
     max-width: 899px;
   }
   #cabecera{
     text-align: center;
-    animation: mianimacion 1s;
+    animation: mianimacion 0.5s;
   }
   #contenedor2{
     flex-direction: column;
@@ -53,6 +51,7 @@ body [id*="contenedor"] img{
   border-top-right-radius: 10px;
   background: #5b7989;
 }
+/*ANIMACION SLIDEIN*/
 @keyframes mianimacion {
   from{
     margin-top: 150%;
@@ -61,7 +60,6 @@ body [id*="contenedor"] img{
     margin-top: -5%;
   }
 }
-
 /*COLOR Y SOMBRA DEL NOMBRE DEL SITIO*/
 h1 {
   color: white;
@@ -92,7 +90,6 @@ a:hover{
   display: block;
   margin: auto;
 }
-
 /*CONTENEDOR IMAGENES SECUNDARIAS*/
 #contenedor2{
   padding: 5vw 8vh;
@@ -103,7 +100,6 @@ a:hover{
   flex: column;
   -webkit-flex: column;
 }
-
 /*ORDEN DE IMAGENES SECUNDARIAS*/
 .bloque1 img{
   display: block;
@@ -113,7 +109,6 @@ a:hover{
   order: 1;
   -webkit-order: 1;
 }
-
 .bloque2 img{
   display: block;
   margin: auto;
@@ -122,33 +117,28 @@ a:hover{
   order: 2;
   -webkit-order: 2;
 }
-
 /*LEYENDA FOTOGRAFIA SECUNDARIAS*/
 figcaption{
   text-align: center;
   font-size: 1.5em;
   text-decoration: underline;
 }
-
 /*TRANSICION DE LAS IMAGENES SECUNDARIAS*/
 #contenedor2 img{
   transition-duration: 0.5s;
 }
-
 /*ROTACION IMAGEN PAISAJE*/
 .bloque1 img:hover{
   transform: rotate(10deg);
   -webkit-transform: rotate(10deg);
   box-shadow: 2px 2px #82c3a6;
 }
-
 /*TRASLACION DE LA IMAGEN RETRATO*/
 .bloque2 img:hover{
   transform: translate(20px,-5px);
   -webkit-transform: translate(20px,-5px);
   box-shadow: 2px 2px #82c3a6;
 }
-
 /*CONTENEDOR GALERIAS*/
 #galeria{
   padding: 5vw 8vh;
@@ -158,12 +148,10 @@ figcaption{
   flex: column;
   -webkit-flex: column;
 }
-
 /*SOMBRA GALERIA ES PARA QUE LOS ICONOS SVG NO TENGAN LA SOMBRA*/
 #galeria img{
   box-shadow: 2px 2px #02010a;
 }
-
 /*ORDEN Y TAMANO COLUMNAS GALERIA*/
 .columna1 img{
   display: block;
@@ -173,7 +161,6 @@ figcaption{
   order: 1;
   -webkit-order: 1;
 }
-
 .columna2 img{
   display: block;
   margin: auto;
@@ -182,7 +169,6 @@ figcaption{
   order: 2;
   -webkit-order: 2;
 }
-
 .columna3 img{
   display: block;
   margin: auto;
@@ -191,7 +177,6 @@ figcaption{
   order: 3;
   -webkit-order: 3;
 }
-
 /*FILTROS*/
 #img1{
   -webkit-filter: blur(10px);
@@ -213,7 +198,6 @@ figcaption{
   -webkit-filter: sepia(90%);
 	filter: sepia(90%);
 }
-
 /*FOOTER*/
 #pie{
   padding: 3vw 6vh;
@@ -225,7 +209,6 @@ figcaption{
   flex: column;
   -webkit-flex: column;
 }
-
 /*ORDEN Y TAMANO PIE DE PAGINA*/
 .contacto{
   font-size: 1.2em;
@@ -236,7 +219,6 @@ figcaption{
   order: 1;
   -webkit-order: 1;
 }
-
 .termino{
   font-size: 1.2em;
   display: block;
@@ -246,7 +228,6 @@ figcaption{
   order: 2;
   -webkit-order: 2;
 }
-
 .sociales{
   font-size: 1.2em;
   display: block;
@@ -256,7 +237,6 @@ figcaption{
   order: 3;
   -webkit-order: 3;
 }
-
 .derechos{
   font-size: 1.2em;
   display: block;
@@ -266,14 +246,12 @@ figcaption{
   order: 4;
   -webkit-order: 4;
 }
-
 /*DESVISUALIZACION DE VINETA Y TAMANO DE LETRAS DEL MISMO*/
 ul{
   list-style: none;
   font-size: 1em;
-  padding: 0;
+  padding: 0vw;
 }
-
 /*cOLOR HIPERVINCULO CORREO*/
 ul a{
   color: black;
