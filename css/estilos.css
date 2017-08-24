@@ -4,10 +4,14 @@
   width: 100%;
   margin: 0 auto;
 }
+
 /*DIFERENTES TAMANOS PARA DESKTOP Y MOVIL*/
 @media all and (min-width:720px) {
   #contenido{
     min-width: 900px;
+  }
+  #cabecera{
+    animation: mianimacion 1s;
   }
 }
 
@@ -17,6 +21,7 @@
   }
   #cabecera{
     text-align: center;
+    animation: mianimacion 1s;
   }
   #contenedor2{
     flex-direction: column;
@@ -48,6 +53,15 @@ body [id*="contenedor"] img{
   border-top-right-radius: 10px;
   background: #5b7989;
 }
+@keyframes mianimacion {
+  from{
+    margin-top: 150%;
+  }
+  to{
+    margin-top: -5%;
+  }
+}
+
 /*COLOR Y SOMBRA DEL NOMBRE DEL SITIO*/
 h1 {
   color: white;
@@ -176,6 +190,28 @@ figcaption{
   width: 90%;
   order: 3;
   -webkit-order: 3;
+}
+
+/*FILTROS*/
+#img1{
+  -webkit-filter: blur(10px);
+	filter: blur(10px);
+}
+#img2{
+  -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+#img4{
+  -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+#img6{
+  -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+#img3{
+  -webkit-filter: sepia(90%);
+	filter: sepia(90%);
 }
 
 /*FOOTER*/
